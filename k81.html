@@ -1,0 +1,71 @@
+
+<body>
+
+
+
+    <title>K81 Infocard</title>
+    <meta charset="UTF-8"><link rel="stylesheet" type="text/css" href="../STYLES/style2.css">
+    <script src="../Jmol/jsmol/js"></script>
+    <script type="text/javascript" src="../Jmol/jsmol/JSmol.min.js"></script>
+    <script type="text/javascript">
+    var Info = {  height: 300,  use: "HTML5 Java WebGL Image", coverImage: "../imgjmol/loading.jpeg", deferApplet: false, j2sPath: "../Jmol/jsmol/j2s"
+    }
+    </script>
+    <ul>
+      <li><a href="../index2.php">Back to Glycan3DB</a></li>
+      <li style="float:right"><a class="active" href="#about"><img src="../imgjmol/logopng.png" style="width:20px;height:20px;"></a></li>
+      <li style="float:right"><a class="active" href="../INFOCARDS/help.html">HELP</a></li>
+    </ul>
+    <body>
+    
+    <div class="header">
+      <h2>K81 </h2>
+      <h4>3D Visualisation, Nuclear Magnetic Resonance and References</h4>
+    </div>
+    
+    <div class="row">
+      <div class="column" style="background-color:white;"><b>2D Representation</b><br><br> <img src="../KP 2Ds/k81.png" alt=" " width="440" height="250"></div>
+      <div class="column" style="background-color:white;"><b>Additional Information (including Nuclear Magentic Resonance)</b>
+      <br>
+        <br>
+        
+        <br>
+        Branched: 
+        <b>No</b>
+        <br>
+        <br>
+        <br>
+        
+        Number of Repeated Units: 
+        <b>6</b>
+        <br>
+        <br>
+        <br>
+        
+        Nuclear Magnetic Resonance if applicable  (H-1 and other diagnostic chemical shifts in ppm):
+        <b></b>
+        <br>
+        <br>
+        <br>
+        
+        Chemical Representation: 
+        <b>->2)-a-L-Rhap-(1->3)-a-L-Rhap-(1->4)-b-D-GlcpA-(1->2)-a-L-Rhap-(1->3)-a-L-Rhap-(1->3)-b-D-Galp-(1-></b>
+      </div>
+      <div class="column" style="background-color:white;"><b>3D visualisation</b><br><br>
+        <script type="text/javascript">
+          jmolApplet0 = Jmol.getApplet("jmolApplet0", Info);
+          Jmol.script(jmolApplet0,"background white;load ../files2/k81.pdb")
+        </script>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>Curvall M, Lindberg B, Lönngren. Structural studies of the capsular polysaccharide of Klebsiella type 81. Carbohydr Res. 1975;42(1):73-82
+        <br> <br> <a href="https://doi.org/10.1016/s0008-6215(00)84101-40">Link to Paper</a> <br><br>
+        <a href="../files2/k81.pdb" download="k81.pdb">Download PDB file</a>
+      </p>
+    </div>
+    
+    </body>
+    </html>
+   

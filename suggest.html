@@ -1,0 +1,33 @@
+
+    <link rel="stylesheet" type="text/css" href="STYLES/style3.css">
+
+<ul>
+    <li><a href="index2.php">Back to GlycanDB</a></li>
+    <li style="float:right"><a class="active" href="#about">><img src="../imgjmol/logopng.png" style="width:20px;height:20px;"></a></li>
+   </li>
+  </ul>
+  <h3> Suggest A Glycan </h3>
+  <h4> All text boxes are required*</h4>
+  <form action="SCRIPTS/contact.php" method="post">
+    <div class="elem-group">
+      <label for="name">Your Name*</label>
+      <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+    </div>
+    <div class="elem-group">
+      <label for="email">Your E-mail*</label>
+      <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+    </div>
+    <div class="elem-group">
+      <label for="message">Give the chemical structure of the antigen*</label>
+      <textarea id="message2" name="chemstructure" placeholder="Chemical structure in CASPER format, such as                    ->3)-b-D-Glcp-(1->4)-[a-D-GlcpA-(1->3)]b-D-Manp-(1->4)-a-D-Glcp-(1->" required></textarea>
+    </div>
+    <div class="elem-group">
+      <label for="title">Species of Origin*</label>
+      <input type="text" id="title" name="species" required placeholder="i.e Klebsiella Pneumoniae" pattern=[A-Za-z0-9\s]{8,60}>
+    </div>
+    <div class="elem-group">
+      <label for="paperlink">Please give a link to the paper it comes from*</label>
+      <textarea id="message" name="visitor_message" placeholder="i.e https://doi.org/123" required></textarea>
+    </div>
+    <button type="submit">Send Message</button>
+  </form>
